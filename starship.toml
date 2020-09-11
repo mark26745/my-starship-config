@@ -1,0 +1,54 @@
+add_newline = false
+scan_timeout = 3
+prompt_order = [
+    "username",
+    "hostname",
+    "directory",
+    "git_branch",
+    "git_commit",
+    "git_state",
+    "git_status",
+    "line_break",
+    "nodejs",
+    "character",
+]
+
+[username]
+style_root = "fg:14"
+style_user = "fg:2"
+show_always = true
+
+[hostname]
+style="fg:2"
+ssh_only = false
+
+[character]
+style_success = "fg:15"
+style_failure = "fg:1"
+symbol = ">"
+error_symbol = "!"
+use_symbol_for_status = true
+
+[directory]
+style = "fg:3"
+prefix = ""
+truncation_length = 0
+truncate_to_repo = false
+
+[git_branch]
+symbol = ""
+style = "fg:8"
+
+[git_commit]
+style = "fg:8"
+only_detached = false
+
+[git_state]
+style= "fg:8"
+
+[git_status]
+style = "fg:8"
+
+[nodejs]
+symbol = "node:"
+style = "fg:15"
